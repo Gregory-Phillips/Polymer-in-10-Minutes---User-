@@ -1,16 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- 1. Load platform support before any code that touches the DOM. -->
-    <script src="./bower_components/webcomponentsjs/webcomponents.min.js"></script>
-    <!-- 2. Load the component using an HTML Import -->
-    <link rel="import" href="./elements/my-element.html">
-    <link rel="stylesheet" href="./bower_components/angular-material/angular-material.min.css">
-  </head>
-  <body ng-app="fitzApp">
-    <!-- 3. Declare the element by its tag. -->
-    <my-element ng-controller="ArtOfFitzCtrl"></my-element>
+<head>
+  <!-- 1. Load platform support before any code that touches the DOM. -->
+  <script src="./bower_components/webcomponentsjs/webcomponents.min.js"></script>
+  <!-- 2. Load the component using an HTML Import -->
+  <link rel="import" href="./elements/my-element.html">
+  <link rel="import" href="./elements/proto-element.html">
+  <link rel="stylesheet" href="./bower_components/angular-material/angular-material.min.css">
+</head>
+<body ng-app="fitzApp">
+  <!-- 3. Declare the element by its tag. -->
+  <section ng-controller="ArtOfFitzCtrl" layout="column">
+    <md-content  class="md-padding">
+      <md-card>
+        <md-card-content>
+          <md-toolbar>
+            <h2 class="md-toolbar-tools">
+              <span>2. Build a Polymer element:</span>
+            </h2>
+          </md-toolbar>
+          <p>my-element.html</p>
+          <my-element></my-element>
+          <p>Source: <a href="https://www.polymer-project.org/0.5/docs/start/creatingelements.html#createpolyel">#createpolyel</a></p>
+          </md-card-content>
+        </md-card>
+        <md-content>
+          <md-card>
+            <md-card-content>
+              <md-toolbar>
+              <h2 class="md-toolbar-tools">
+                <span>Using Polymer's Features:</span>
+                </h2>
+              </md-toolbar>
+              <p>Add properties and methods</p>
+              <p>proto-element.html</p>
+              <proto-element></proto-element>
+              <p>Source: <a href="https://www.polymer-project.org/0.5/docs/start/creatingelements.html#features">#features</a></p>
+              </md-card-content>
+            </md-card>
+        </md-content>
 
+      </md-content>
+
+
+    </section>
     <!-- Angular Material Javascript now available via Google CDN; version 0.8 used here -->
     <script src="./bower_components/angular/angular.min.js"></script>
     <script src="./bower_components/angular-aria/angular-aria.min.js"></script>
@@ -18,4 +51,4 @@
     <script src="./bower_components/angular-material/angular-material.min.js"></script>
     <script src="./js/fitzApp.js"></script>
   </body>
-</html>
+  </html>
