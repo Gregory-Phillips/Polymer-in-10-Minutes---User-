@@ -1,0 +1,27 @@
+{
+  "name": "polymer-project-org",
+  "version": "0.0.1",
+  "authors": [
+    "Gregory-Phillips <gregoryfphillips@gmail.com>"
+  ],
+  "description": "getting strted with polymer",
+  "main": "polymer",
+  "license": "MIT",
+  "homepage": "www.polymer-project-artoffitz.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^0.5",
+    "core-ajax": "Polymer/core-ajax#~0.5.5",
+    "angular-material": "~0.8.3",
+    "angular-animate": "~1.3.15",
+    "angular-aria": "~1.3.15",
+    "core-elements": "Polymer/core-elements#^0.5"
+  }
+}
