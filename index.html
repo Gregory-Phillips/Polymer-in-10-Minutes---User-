@@ -10,6 +10,7 @@
   <link rel="import" href="./elements/fav-color.html">
   <link rel="import" href="./elements/age-slider.html">
   <link rel="import" href="./elements/color-picker.html">
+  <link rel="import" href="./elements/editable-color-picker.html">
   <link rel="stylesheet" href="./bower_components/angular-material/angular-material.min.css">
 </head>
 <body ng-app="fitzApp">
@@ -93,6 +94,18 @@
           <p>Changing the configuration of the polymer element of the values in color-picker to owner="Scott" color="blue"</p>
             <color-picker owner="Scott" color="blue"></color-picker>
           <p>Source: <a href="https://www.polymer-project.org/0.5/docs/start/creatingelements.html#publishing">#publishing</a></p>
+        </md-card-content>
+      </md-card>
+      <md-card>
+        <md-card-content>
+          <md-toolbar>
+            <h2 class="md-toolbar-tools">
+              <span>Automatic node finding</span>
+            </h2>
+          </md-toolbar>
+          <p>editable-color-picker.html</p>
+          <editable-color-picker></editable-color-picker>
+          <p>Source: <a href="https://www.polymer-project.org/0.5/docs/start/creatingelements.html#automatic-node-finding">#publishing</a></p>
         </md-card-content>
       </md-card>
     </md-content>
